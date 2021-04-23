@@ -1,0 +1,28 @@
+Deadlock
+Deadlock refers to the condition when 2 or more processes are
+waiting for each other to release a resource indefinitely.
+
+Conditions for Deadlock
+mutual exclusion-resources cannot be shared
+hold and wait-processes request resource incrementally,and hold on to what they've got.
+no pre-emption-resource cannot be forcibiliy taken from processes
+circular wait-each process is waiting for a resource held the next process in the chain.
+
+Deadlock Avoidance
+Deadlock avoidance can be done with Banker’s Algorithm.
+The request will only be granted under the below condition:
+
+If the request made by the process is less than equal to max need to that process.
+If the request made by the process is less than equal to the freely available resource in the system.
+
+
+Recovery method
+Killing the process: killing all the process involved in the deadlock. Killing process one by one. 
+After killing each process check for deadlock again keep repeating the process till system recover 
+from deadlock.
+
+Resource Preemption: Resources are preempted from the processes involved in the deadlock, 
+preempted resources are allocated to other processes so that there is a possibility of recovering the system 
+from deadlock. 
+
+

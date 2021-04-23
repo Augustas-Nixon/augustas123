@@ -1,0 +1,36 @@
+seek time
+Seek Time is defined as the time required by the read/write head to move from one track to another.
+
+Rotational Latency:
+The time required by the read/write head to rotate to the requested sector from the current position is 
+called Rotational Latency.
+
+Transfer Time: Transfer time is the time to transfer the data. It depends on the rotating speed of the disk
+and number of bytes to be transferred.
+
+ Disk Access Time = Seek Time + 
+                         Rotational Latency + 
+                         Transfer Time
+
+Disk scheduling
+Disk scheduling is done by operating systems to schedule I/O requests arriving for the disk. 
+Disk scheduling is also known as I/O scheduling.
+
+FCFS: FCFS is the simplest of all the Disk Scheduling Algorithms. In FCFS, the requests are addressed 
+in the order they arrive in the disk queue
+
+SCAN: In SCAN algorithm the disk arm moves into a particular direction and services the requests coming in its path
+and after reaching the end of disk, it reverses its direction and again services the request arriving in its path.
+
+CSCAN: In SCAN algorithm, the disk arm again scans the path that has been scanned, after reversing its direction. 
+
+why disk sceduling is imporatnt
+Multiple I/O requests may arrive by different processes and only one I/O request can be served at a time by the disk controller. Thus other I/O requests need to wait in the waiting queue and need to be scheduled.
+Two or more request may be far from each other so can result in greater disk arm movement.
+Hard drives are one of the slowest parts of the computer system and thus need to be accessed in an efficient manner
+
+structure
+A magnetic disk contains several platters. Each platter is divided into circular shaped tracks. 
+The length of the tracks near the centre is less than the length of the tracks farther from the centre. 
+Each track is further divided into sectors
+
